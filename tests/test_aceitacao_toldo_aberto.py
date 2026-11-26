@@ -290,6 +290,169 @@ window.addEventListener("load", () => setTimeout(() => {{
             report["propagacao_mudanca_preco"] = res_p
         finally:
             shutil.rmtree(tmp_preco_dir, ignore_errors=True)
+
+        # 4d) E2E completo de equipe.html nos 4 segmentos + geometria responsiva (320px/360px/1440px) + compilação --producao
+        e2e_eq = ROOT / "output" / "_e2e_equipe_completa.html"
+        try:
+            e2e_eq.write_text(
+                f"""<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body style="margin:0">
+<iframe id="eq320" src="http://127.0.0.1:{port}/output/quatro-segmentos/alimentacao/equipe.html" style="width:320px;height:800px;border:0"></iframe>
+<iframe id="eq1440" src="http://127.0.0.1:{port}/output/quatro-segmentos/alimentacao/equipe.html" style="width:1440px;height:900px;border:0"></iframe>
+<script>
+window.addEventListener("load", () => setTimeout(() => {{
+  const d320 = document.getElementById("eq320").contentDocument;
+  const d1440 = document.getElementById("eq1440").contentDocument;
+  d320.defaultView.localStorage.clear();
+  d1440.defaultView.localStorage.clear();
+
+  const semOverflow320 = d320.documentElement.scrollWidth <= 320;
+  const semOverflow1440 = d1440.documentElement.scrollWidth <= 1440;
+  const zeroSenhas = d1440.querySelectorAll('input[type="password"]').length === 0;
+  const temAvisoExportacao = d1440.body.innerText.includes("Exportar não publica o site");
+
+  // Verifica alvos de toque visíveis >= 48px (botões, campos de texto, selects e rótulos de opções)
+  const alvosMenores48 = [];
+  d320.querySelectorAll('button, input:not([type="checkbox"]):not([type="radio"]):not([type="file"]), select, textarea, .opcao-controle').forEach((el) => {{
+    if (el.hidden || el.closest("[hidden]") || el.closest("details:not([open]) > :not(summary)")) return;
+    const cs = d320.defaultView.getComputedStyle(el);
+    if (cs.display === "none" || cs.visibility === "hidden") return;
+    const r = el.getBoundingClientRect();
+    if (r.width > 0 && r.height > 0 && (r.height < 47.5 || r.width < 47.5)) {{
+      alvosMenores48.push(el.id || el.className || el.tagName);
+    }}
+  }});
+
+  function setVal(doc, sel, val) {{
+    const el = typeof sel === "string" ? doc.querySelector(sel) : sel;
+    el.value = val;
+    el.dispatchEvent(new doc.defaultView.Event("input", {{ bubbles: true }}));
+    el.dispatchEvent(new doc.defaultView.Event("change", {{ bubbles: true }}));
+  }}
+
+  function setCheck(doc, sel, checked) {{
+    const el = typeof sel === "string" ? doc.querySelector(sel) : sel;
+    el.checked = checked;
+    el.dispatchEvent(new doc.defaultView.Event("change", {{ bubbles: true }}));
+  }}
+
+  const resultadosSegmentos = {{}};
+
+  // 1) ALIMENTAÇÃO completo (com Pix, horários extras, GPS, Destaque da casa, variações, história e fotos referenciadas)
+  setCheck(d1440, "#eq-consentimento", true);
+  setCheck(d1440, "#seg-alimentacao", true);
+  setVal(d1440, "#eq-nome", "Pastel da Dona Nalva");
+  setVal(d1440, "#eq-atendente", "Dona Nalva");
+  setVal(d1440, "#eq-oferta", "Pastel na hora e caldo de cana gelado, no Parque da Cidade");
+  setVal(d1440, "#eq-dias", "Quinta a domingo");
+  setVal(d1440, "#eq-inicio", "08h");
+  setVal(d1440, "#eq-fim", "17h");
+  d1440.getElementById("btn-add-horario").click();
+  setVal(d1440, ".js-ht-dias", "Sábado e domingo");
+  setVal(d1440, ".js-ht-hora", "07h30 às 17h30");
+  setVal(d1440, "#eq-ref", "Perto da entrada principal, ao lado das amendoeiras");
+  setVal(d1440, "#eq-lat", "-12,9949");
+  setVal(d1440, "#eq-lng", "-38,4611");
+  setVal(d1440, "#eq-zap", "(71) 99123-4567");
+  setCheck(d1440, "#eq-pix-aut", true);
+  setVal(d1440, "#eq-pix-nome", "Maria Nalva dos Santos");
+  setVal(d1440, "#eq-pix-chave", "nalva.pastel@exemplo.br");
+  setVal(d1440, "#eq-historia", "Abro a massa fresquinha toda manhã na sombra das amendoeiras.");
+  setCheck(d1440, "#eq-ref-foto-barraca", true);
+  setCheck(d1440, ".item-editor .js-it-destaque", true);
+  setVal(d1440, ".item-editor .js-it-nome", "Pastel grande na hora");
+  setVal(d1440, ".item-editor .js-it-cat", "Salgados");
+  setVal(d1440, ".item-editor .js-it-desc", "Acompanha vinagrete da casa.");
+  d1440.querySelector(".item-editor .js-add-var").click();
+  setVal(d1440, ".item-editor .js-var-rotulo", "Queijo coalho");
+  setVal(d1440, ".item-editor .js-var-preco", "10,00");
+
+  resultadosSegmentos.alimentacao = {{
+    json: JSON.parse(d1440.getElementById("json-gerado-previa").value),
+    prompt: d1440.getElementById("prompt-gerado-chat").value
+  }};
+
+  // 2) BRINQUEDOS (com idade indicada)
+  setCheck(d1440, "#seg-brinquedos", true);
+  setVal(d1440, ".item-editor .js-it-nome", "Kit bolha gigante");
+  setVal(d1440, ".item-editor .js-it-idade", "A partir de 3 anos");
+  resultadosSegmentos.brinquedos = {{
+    json: JSON.parse(d1440.getElementById("json-gerado-previa").value),
+    prompt: d1440.getElementById("prompt-gerado-chat").value
+  }};
+
+  // 3) INFLÁVEIS (com tempo, idade, altura e regras)
+  setCheck(d1440, "#seg-inflaveis", true);
+  setVal(d1440, ".item-editor .js-it-nome", "Tobogã inflável colorido");
+  setVal(d1440, ".item-editor .js-it-tempo", "15 minutos");
+  setVal(d1440, ".item-editor .js-it-idade", "3 a 12 anos");
+  setVal(d1440, ".item-editor .js-it-altura", "Até 1,50 m");
+  setVal(d1440, ".item-editor .js-it-regras", "Sem calçados.\\nResponsável por perto.");
+  resultadosSegmentos.inflaveis = {{
+    json: JSON.parse(d1440.getElementById("json-gerado-previa").value),
+    prompt: d1440.getElementById("prompt-gerado-chat").value
+  }};
+
+  // 4) BICICLETAS (com tempos_precos e regras_aluguel)
+  setCheck(d1440, "#seg-bicicletas", true);
+  setVal(d1440, "#eq-regra-doc", "Documento com foto no cadastro.");
+  setVal(d1440, "#eq-regra-caucao", "Sem caução.");
+  setVal(d1440, "#eq-regra-devolucao", "Devolução até as 17h.");
+  setVal(d1440, ".item-editor .js-it-nome", "Bicicleta passeio aro 26");
+  const tps = d1440.querySelectorAll(".item-editor .js-linha-tp");
+  setVal(d1440, tps[0].querySelector(".js-tp-tempo"), "30 minutos");
+  setVal(d1440, tps[0].querySelector(".js-tp-preco"), "18,00");
+  setVal(d1440, tps[1].querySelector(".js-tp-tempo"), "1 hora");
+  setVal(d1440, tps[1].querySelector(".js-tp-preco"), "30,00");
+  resultadosSegmentos.bicicletas = {{
+    json: JSON.parse(d1440.getElementById("json-gerado-previa").value),
+    prompt: d1440.getElementById("prompt-gerado-chat").value
+  }};
+
+  d1440.defaultView.localStorage.clear();
+  document.title = JSON.stringify({{
+    semOverflow320,
+    semOverflow1440,
+    zeroSenhas,
+    temAvisoExportacao,
+    alvosMenores48,
+    resultadosSegmentos
+  }});
+}}, 700));
+</script></body></html>""",
+                encoding="utf-8",
+            )
+            dom_eq = _dump_dom_from_chrome(f"http://127.0.0.1:{port}/output/_e2e_equipe_completa.html", wait_ms=3200)
+            res_eq = json.loads(html_unescape(re.search(r"<title>(.*?)</title>", dom_eq, re.S).group(1)))
+            assert res_eq["semOverflow320"] is True, f"Overflow em 320px em equipe.html: {res_eq}"
+            assert res_eq["semOverflow1440"] is True, f"Overflow em 1440px em equipe.html: {res_eq}"
+            assert res_eq["zeroSenhas"] is True
+            assert res_eq["temAvisoExportacao"] is True
+            assert res_eq["alvosMenores48"] == [], f"Alvos < 48px em equipe.html: {res_eq['alvosMenores48']}"
+
+            # Verifica que o dados.json exportado por equipe.html compila em MODO PRODUÇÃO nos 4 segmentos sem faltar nenhum campo!
+            for seg_k, pacote_seg in res_eq["resultadosSegmentos"].items():
+                dados_exp = pacote_seg["json"]
+                prompt_exp = pacote_seg["prompt"]
+                erros_prod = validar_dados(dados_exp, modo_producao=True)
+                assert erros_prod == [], f"Erros de produção em {seg_k} exportado por equipe.html: {erros_prod}"
+                assert "COLETA 100% COMPLETA E VALIDADA PARA BUILD DE PRODUÇÃO" in prompt_exp, f"Prompt incompleto em {seg_k}: {prompt_exp}"
+                assert '"slug": "pastel-da-dona-nalva"' in prompt_exp
+
+                tmp_eq_build = Path(tempfile.mkdtemp(prefix=f"eq_prod_{seg_k}_"))
+                try:
+                    (tmp_eq_build / "dados.json").write_text(json.dumps(dados_exp, ensure_ascii=False), encoding="utf-8")
+                    compilar_site_ambulante(tmp_eq_build, tmp_eq_build / "dist", ROOT, modo_producao=True)
+                    html_compilado = (tmp_eq_build / "dist" / "index.html").read_text(encoding="utf-8")
+                    assert "Pastel da Dona Nalva" in html_compilado
+                    assert "5571991234567" in html_compilado
+                    assert "Perto da Perto da" not in html_compilado
+                finally:
+                    shutil.rmtree(tmp_eq_build, ignore_errors=True)
+
+            report["equipe_4_segmentos_e_prompt"] = "APROVADO_100_PORCENTO"
+        finally:
+            if e2e_eq.exists():
+                e2e_eq.unlink()
     finally:
         httpd.shutdown()
 
