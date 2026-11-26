@@ -1,0 +1,91 @@
+{
+  "slug": "barraca-exemplo-inflaveis",
+  "modo_exemplo": true,
+  "consentimento": true,
+  "segmento": "inflaveis",
+  "nome_negocio": "Barraca Exemplo",
+  "quem_atende": "Tia Cris (personagem fictícia)",
+  "o_que_oferece": "Tobogã inflável, castelo pula-pula e cama elástica na sombra, no Parque da Cidade",
+  "whatsapp": "",
+  "pix": {
+    "autorizado": false,
+    "chave": "",
+    "recebedor": ""
+  },
+  "pagamento": [
+    "Dinheiro",
+    "Cartão de débito e crédito",
+    "Pix presencial"
+  ],
+  "dias": "Sábado, domingo e feriados",
+  "horarios": {
+    "inicio": "08h30",
+    "fim": "17h30",
+    "tabela": [
+      { "dias": "Sábado", "horario": "09h às 17h30" },
+      { "dias": "Domingo e feriados", "horario": "08h30 às 17h30" }
+    ]
+  },
+  "referencia": "área infantil sombreada, próximo ao Parque Infantil",
+  "latitude": -12.9958,
+  "longitude": -38.4620,
+  "data_precos_conferidos": "25/11/2026",
+  "destaque": "",
+  "aceita_pedidos_do_dia": false,
+  "aceita_encomendas": true,
+  "historia_aprovada": "Ficamos de olho em cada turma na entrada dos brinquedos para os pais descansarem tranquilos nos bancos da sombra.",
+  "fotos": {},
+  "enquadramentos": {},
+  "url_final": "https://parque-da-cidade-unijorge.vercel.app/inflaveis/",
+  "itens": [
+    {
+      "id": "toboga-inflavel",
+      "categoria": "Brinquedos infláveis",
+      "nome": "Tobogã inflável colorido",
+      "descricao": "Escorregador alto com base acolchoada e monitor na escada.",
+      "foto": "",
+      "tempo": "15 minutos",
+      "preco": 15.00,
+      "idade_indicada": "3 a 12 anos",
+      "altura_permitida": "De 0,90 m até 1,50 m",
+      "regras": [
+        "Entrada somente sem calçados e sem objetos nos bolsos.",
+        "Não é permitido subir com alimentos, bebidas ou óculos.",
+        "Um responsável deve permanecer próximo à área do brinquedo."
+      ],
+      "variacoes": []
+    },
+    {
+      "id": "cama-elastica",
+      "categoria": "Pula-pula",
+      "nome": "Cama elástica com rede lateral",
+      "descricao": "Pula-pula circular fechado com tela de proteção e molas cobertas.",
+      "foto": "",
+      "tempo": "15 minutos",
+      "preco": 10.00,
+      "idade_indicada": "2 a 10 anos",
+      "altura_permitida": "Até 1,40 m",
+      "regras": [
+        "Turmas separadas por faixa de tamanho para evitar esbarrões.",
+        "Uso obrigatório sem sapatos e sem presilhas pontiagudas."
+      ],
+      "variacoes": []
+    },
+    {
+      "id": "passaporte-livre",
+      "categoria": "Tempo livre",
+      "nome": "Passaporte combinado nos brinquedos",
+      "descricao": "Acesso alternado entre o tobogã inflável e a cama elástica.",
+      "foto": "",
+      "tempo": "40 minutos",
+      "preco": 30.00,
+      "idade_indicada": "3 a 12 anos",
+      "altura_permitida": "Até 1,50 m",
+      "regras": [
+        "Pulseira individual com horário marcado na entrada.",
+        "Pausa rápida para beber água liberada durante o tempo."
+      ],
+      "variacoes": []
+    }
+  ]
+}

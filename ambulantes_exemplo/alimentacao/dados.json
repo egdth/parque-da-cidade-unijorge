@@ -1,0 +1,125 @@
+{
+  "slug": "barraca-exemplo-alimentacao",
+  "modo_exemplo": true,
+  "consentimento": true,
+  "segmento": "alimentacao",
+  "nome_negocio": "Barraca Exemplo",
+  "quem_atende": "Dona Lúcia (personagem fictícia)",
+  "o_que_oferece": "Pastel frito na hora, pirão de aipim e açaí na tigela, no Parque da Cidade",
+  "whatsapp": "",
+  "pix": {
+    "autorizado": false,
+    "chave": "",
+    "recebedor": ""
+  },
+  "pagamento": [
+    "Dinheiro",
+    "Cartão de débito e crédito por aproximação",
+    "Pix na barraca"
+  ],
+  "dias": "Quinta a domingo",
+  "horarios": {
+    "inicio": "08h",
+    "fim": "17h",
+    "tabela": [
+      { "dias": "Quinta e sexta-feira", "horario": "08h às 16h30" },
+      { "dias": "Sábado, domingo e feriados", "horario": "07h30 às 17h30" }
+    ]
+  },
+  "referencia": "entrada principal, ao lado da sombra das amendoeiras",
+  "latitude": -12.9949,
+  "longitude": -38.4611,
+  "data_precos_conferidos": "25/11/2026",
+  "destaque": "pastel-grande",
+  "aceita_pedidos_do_dia": true,
+  "aceita_encomendas": true,
+  "historia_aprovada": "Chego cedo para abrir a massa na sombra das amendoeiras e atender quem caminha no parque com comida feita na hora.",
+  "fotos": {
+    "barraca": "barraca.webp",
+    "fachada": "barraca.webp",
+    "retrato": "barraca.webp"
+  },
+  "enquadramentos": {
+    "barraca": "topo",
+    "fachada": "centro",
+    "retrato": "topo",
+    "pastel-grande": "base",
+    "acai-tigela": "centro"
+  },
+  "url_final": "https://parque-da-cidade-unijorge.vercel.app/",
+  "itens": [
+    {
+      "id": "pastel-grande",
+      "categoria": "Salgados na hora",
+      "nome": "Pastel grande frito na hora",
+      "descricao": "Massa sequinha aberta no rolo, acompanha vinagrete da casa.",
+      "foto": "pastel.webp",
+      "tipo_variacao": "sabor",
+      "variacoes": [
+        { "rotulo": "Queijo coalho", "preco": 10.00 },
+        { "rotulo": "Carne moída", "preco": 10.00 },
+        { "rotulo": "Frango com catupiry", "preco": 11.00 },
+        { "rotulo": "Camarão seco", "preco": 14.00 }
+      ]
+    },
+    {
+      "id": "caldo-cana",
+      "categoria": "Salgados na hora",
+      "nome": "Caldo de cana moído na hora",
+      "descricao": "Gelado com gelo filtrado, puro ou batido com limão.",
+      "foto": "",
+      "tipo_variacao": "tamanho",
+      "variacoes": [
+        { "rotulo": "Copo 300 ml", "preco": 6.00 },
+        { "rotulo": "Copo 500 ml", "preco": 9.00 }
+      ]
+    },
+    {
+      "id": "pirao-aipim",
+      "categoria": "Pratos quentes",
+      "nome": "Pirão de aipim cremoso",
+      "descricao": "Servido quente na cumbuca com queijo coalho tostado na chapa.",
+      "foto": "",
+      "tipo_variacao": "opção",
+      "variacoes": [
+        { "rotulo": "Com carne do sol", "preco": 22.00 },
+        { "rotulo": "Com frango desfiado", "preco": 20.00 }
+      ]
+    },
+    {
+      "id": "espetinho-brasa",
+      "categoria": "Pratos quentes",
+      "nome": "Espetinho na brasa com farofa",
+      "descricao": "Assado na hora, acompanha farofa de manteiga e vinagrete.",
+      "foto": "",
+      "tipo_variacao": "sabor",
+      "variacoes": [
+        { "rotulo": "Alcatra", "preco": 12.00 },
+        { "rotulo": "Frango", "preco": 11.00 },
+        { "rotulo": "Queijo coalho", "preco": 10.00 }
+      ]
+    },
+    {
+      "id": "acai-tigela",
+      "categoria": "Açaí e doces",
+      "nome": "Açaí na tigela",
+      "descricao": "Batido grosso com banana fatiada, granola crocante e leite em pó.",
+      "foto": "acai.webp",
+      "tipo_variacao": "tamanho",
+      "variacoes": [
+        { "rotulo": "300 ml", "preco": 14.00 },
+        { "rotulo": "500 ml", "preco": 20.00 }
+      ]
+    },
+    {
+      "id": "cocada-forno",
+      "categoria": "Açaí e doces",
+      "nome": "Cocada baiana cremosa",
+      "descricao": "Coco fresco ralado no tacho, feita no dia.",
+      "foto": "",
+      "tipo_variacao": "",
+      "preco": 6.00,
+      "variacoes": []
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "barraca-exemplo-bicicletas",
+  "modo_exemplo": true,
+  "consentimento": true,
+  "segmento": "bicicletas",
+  "nome_negocio": "Barraca Exemplo",
+  "quem_atende": "Marcos Vinícius (personagem fictício)",
+  "o_que_oferece": "Aluguel de bicicletas infantis, aro 26 e 29 e triciclos na ciclovia, no Parque da Cidade",
+  "whatsapp": "",
+  "pix": {
+    "autorizado": false,
+    "chave": "",
+    "recebedor": ""
+  },
+  "pagamento": [
+    "Dinheiro",
+    "Cartão de débito e crédito",
+    "Pix na retirada"
+  ],
+  "dias": "Terça a domingo",
+  "horarios": {
+    "inicio": "07h",
+    "fim": "17h",
+    "tabela": [
+      { "dias": "Terça a sexta-feira", "horario": "07h30 às 16h30" },
+      { "dias": "Sábado, domingo e feriados", "horario": "07h às 17h" }
+    ]
+  },
+  "referencia": "início da pista de ciclismo, ao lado do estacionamento principal",
+  "latitude": -12.9945,
+  "longitude": -38.4607,
+  "data_precos_conferidos": "25/11/2026",
+  "destaque": "",
+  "aceita_pedidos_do_dia": false,
+  "aceita_encomendas": true,
+  "historia_aprovada": "Reviso freio e calibragem de cada bicicleta cedo da manhã para todo mundo pedalar leve na volta do parque.",
+  "regras_aluguel": {
+    "documento": "Apresentação de documento com foto do responsável no cadastro.",
+    "caucao": "Não cobramos caução em dinheiro.",
+    "devolucao": "Devolução no mesmo ponto de retirada até o fechamento às 17h."
+  },
+  "fotos": {},
+  "enquadramentos": {},
+  "url_final": "https://parque-da-cidade-unijorge.vercel.app/bicicletas/",
+  "itens": [
+    {
+      "id": "bike-infantil",
+      "categoria": "Aluguel na ciclovia",
+      "nome": "Bicicleta infantil aro 16 ou 20",
+      "descricao": "Com ou sem rodinhas laterais; acompanha capacete infantil.",
+      "tempos_precos": [
+        { "tempo": "30 minutos", "preco": 15.00 },
+        { "tempo": "1 hora", "preco": 25.00 }
+      ],
+      "variacoes": []
+    },
+    {
+      "id": "bike-passeio",
+      "categoria": "Aluguel na ciclovia",
+      "nome": "Bicicleta passeio aro 26 ou 29",
+      "descricao": "Marcha leve para subida suave e cestinha dianteira opcional.",
+      "tempos_precos": [
+        { "tempo": "30 minutos", "preco": 18.00 },
+        { "tempo": "1 hora", "preco": 30.00 }
+      ],
+      "variacoes": []
+    },
+    {
+      "id": "bike-cadeirinha",
+      "categoria": "Aluguel na ciclovia",
+      "nome": "Bicicleta adulto com cadeirinha",
+      "descricao": "Cadeirinha traseira afixada com cinto para crianças até 20 kg.",
+      "tempos_precos": [
+        { "tempo": "30 minutos", "preco": 22.00 },
+        { "tempo": "1 hora", "preco": 36.00 }
+      ],
+      "variacoes": []
+    },
+    {
+      "id": "triciclo-familia",
+      "categoria": "Aluguel na ciclovia",
+      "nome": "Triciclo duplo para passeio",
+      "descricao": "Dois assentos lado a lado com cobertura de lona para sombra.",
+      "tempos_precos": [
+        { "tempo": "30 minutos", "preco": 35.00 },
+        { "tempo": "1 hora", "preco": 58.00 }
+      ],
+      "variacoes": []
+    }
+  ]
+}

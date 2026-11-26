@@ -1,0 +1,38 @@
+# Ambientes, cache e segredos locais
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+.vercel/
+
+# Arquivos locais, sensíveis ou de fases intermediárias de prototipação
+WhatsApp*
+runs_log.jsonl
+team_memory.md
+run_team.ps1
+output/
+.agents/
+exemplos/
+assets/demo/
+docs/*.json
+docs/cartao_balcao.html
+docs/og-parque.png
+docs/grafo_equipe.svg
+
+# Protótipos anteriores à arquitetura Toldo Aberto
+parque_digital/adk_graph.py
+parque_digital/agents_logic.py
+parque_digital/builders_v2_v3.py
+parque_digital/builder_v4.py
+parque_digital/builder_v5.py
+parque_digital/checker.py
+parque_digital/cli.py
+parque_digital/gerar_fase2_amostra.py
+parque_digital/gerar_fase3_primeiras_telas.py
+parque_digital/og_image.py
+parque_digital/weekly_review.py

@@ -1,0 +1,85 @@
+{
+  "slug": "barraca-exemplo-brinquedos",
+  "modo_exemplo": true,
+  "consentimento": true,
+  "segmento": "brinquedos",
+  "nome_negocio": "Barraca Exemplo",
+  "quem_atende": "Seu Jorge (personagem fictício)",
+  "o_que_oferece": "Bolhas de sabão gigantes, pipas sem cerol, bolas e doces, no Parque da Cidade",
+  "whatsapp": "",
+  "pix": {
+    "autorizado": false,
+    "chave": "",
+    "recebedor": ""
+  },
+  "pagamento": [
+    "Dinheiro",
+    "Cartão por aproximação",
+    "Pix no balcão"
+  ],
+  "dias": "Sábado, domingo e feriados",
+  "horarios": {
+    "inicio": "08h",
+    "fim": "17h",
+    "tabela": [
+      { "dias": "Sábado", "horario": "08h30 às 17h" },
+      { "dias": "Domingo e feriados", "horario": "08h às 17h" }
+    ]
+  },
+  "referencia": "entrada do gramado central, ao lado da Praça das Crianças",
+  "latitude": -12.9954,
+  "longitude": -38.4616,
+  "data_precos_conferidos": "25/11/2026",
+  "destaque": "",
+  "aceita_pedidos_do_dia": false,
+  "aceita_encomendas": true,
+  "historia_aprovada": "Monto as varinhas de bolha de sabão à mão para ver as famílias brincando na sombra do gramado.",
+  "fotos": {},
+  "enquadramentos": {},
+  "url_final": "https://parque-da-cidade-unijorge.vercel.app/brinquedos/",
+  "itens": [
+    {
+      "id": "bolha-gigante",
+      "categoria": "Para o gramado",
+      "nome": "Kit bolha de sabão gigante",
+      "descricao": "Varinha dupla de algodão com garrafa de líquido concentrado.",
+      "foto": "",
+      "idade_indicada": "A partir de 3 anos",
+      "tipo_variacao": "tamanho",
+      "variacoes": [
+        { "rotulo": "Com refil 250 ml", "preco": 15.00 },
+        { "rotulo": "Com refil 500 ml", "preco": 18.00 }
+      ]
+    },
+    {
+      "id": "bola-vinil",
+      "categoria": "Para o gramado",
+      "nome": "Bola leve estampada",
+      "descricao": "Macia para chutar na grama sem machucar.",
+      "foto": "",
+      "idade_indicada": "Livre para todas as idades",
+      "preco": 15.00,
+      "variacoes": []
+    },
+    {
+      "id": "pipa-cata-vento",
+      "categoria": "Vento e cores",
+      "nome": "Pipa pronta com linha pura",
+      "descricao": "Montada com rabiola colorida e linha de algodão sem cerol.",
+      "foto": "",
+      "idade_indicada": "A partir de 5 anos",
+      "preco": 12.00,
+      "variacoes": []
+    },
+    {
+      "id": "algodao-doce",
+      "categoria": "Doces",
+      "nome": "Algodão-doce no pote fechado",
+      "descricao": "Feito na manhã do passeio, protegido contra vento e umidade.",
+      "foto": "",
+      "idade_indicada": "Livre para todas as idades",
+      "preco": 8.00,
+      "variacoes": []
+    }
+  ]
+}

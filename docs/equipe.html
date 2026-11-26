@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-segmento="alimentacao">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ficha de Campo da Equipe Unijorge — Toldo Aberto</title>
+  <link rel="preload" href="fonts/fraunces-600-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/atkinson-hyperlegible-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+
+    @font-face {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 600 800;
+      font-display: swap;
+      src: url("fonts/fraunces-600-800-latin.woff2") format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 600 800;
+      font-display: swap;
+      src: url("fonts/fraunces-600-800-latin-ext.woff2") format("woff2");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: "Fraunces Fallback";
+      src: local("Georgia"), local("Times New Roman");
+      size-adjust: 104%;
+      ascent-override: 94%;
+      descent-override: 24%;
+    }
+    @font-face {
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/atkinson-hyperlegible-400-latin.woff2") format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/atkinson-hyperlegible-400-latin-ext.woff2") format("woff2");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url("fonts/atkinson-hyperlegible-700-latin.woff2") format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: "Atkinson Hyperlegible";
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url("fonts/atkinson-hyperlegible-700-latin-ext.woff2") format("woff2");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    :root {
+      /* Paleta Toldo Aberto */
+      --papel: #FFF9F0;
+      --papel-2: #F6EBDA;
+      --tinta: #24170F;
+      --apoio: #5C4A3D;
+      --mata: #1F5C3A;
+      --mata-escura: #123524;
+      --sol: #F2B63D;
+      --linha: #8A7563;
+      --erro: #A1261D;
+      --acento: #B4471F;
+
+      /* Escala de espaço: 4, 8, 12, 16, 24, 32, 48, 64 e 96 px */
+      --s-4: 4px;
+      --s-8: 8px;
+      --s-12: 12px;
+      --s-16: 16px;
+      --s-24: 24px;
+      --s-32: 32px;
+      --s-48: 48px;
+      --s-64: 64px;
+      --s-96: 96px;
+
+      /* Hierarquia de raios */
+      --r-foto: 20px;
+      --r-botao: 14px;
+      --r-pilula: 999px;
+
+      /* Sombra exclusiva para elementos que flutuam */
+      --sombra-flutuante: 0 12px 28px rgba(36, 23, 15, 0.24), 0 2px 6px rgba(36, 23, 15, 0.14);
+    }
+
+    [data-segmento="alimentacao"] { --acento: #B4471F; }
+    [data-segmento="brinquedos"]  { --acento: #A8325A; }
+    [data-segmento="inflaveis"]   { --acento: #1D5A8F; }
+    [data-segmento="bicicletas"]  { --acento: #0F6666; }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    [hidden] { display: none !important; }
+    html { color-scheme: light; scrollbar-gutter: stable; }
+
+    body {
+      font-family: "Atkinson Hyperlegible", system-ui, -apple-system, sans-serif;
+      font-size-adjust: from-font;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      background-color: var(--papel);
+      color: var(--tinta);
+      text-align: left;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    p, li, dd, .limite-leitura { max-width: 70ch; }
+
+    /* Tipografia Fraunces variável com eixo óptico ativo e SOFT moderado */
+    .letreiro-nome,
+    .titulo-secao,
+    .nome-item,
+    .frase-retrato {
+      font-family: "Fraunces", "Fraunces Fallback", Georgia, serif;
+      font-optical-sizing: auto;
+      font-variation-settings: "SOFT" 45;
+      color: inherit;
+    }
+
+    .letreiro-nome {
+      font-size: clamp(2.75rem, 13vw, 6rem);
+      line-height: 0.95;
+      font-weight: 760;
+      letter-spacing: -0.02em;
+    }
+
+    .titulo-secao {
+      font-size: clamp(1.875rem, 7vw, 3.25rem);
+      line-height: 1.05;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+    }
+
+    .nome-item {
+      font-size: 1.375rem;
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    .texto-apoio {
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--apoio);
+    }
+
+    .preco-valor {
+      font-size: 1.1875rem;
+      font-weight: 700;
+      line-height: 1.15;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .preco-destaque {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.15;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Estrutura de página: 16px mobile, 12 colunas e 1200px no computador */
+    .conteiner {
+      width: 100%;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: var(--s-16);
+    }
+    @media (min-width: 960px) {
+      .conteiner { padding-inline: var(--s-32); }
+    }
+
+    .grade-12 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--s-32);
+    }
+    @media (min-width: 960px) {
+      .grade-12 {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: var(--s-24);
+      }
+    }
+
+    .secao-bloco {
+      padding-block: var(--s-32);
+    }
+    @media (min-width: 960px) {
+      .secao-bloco { padding-block: var(--s-96); }
+    }
+    .secao-alternada { background-color: var(--papel-2); }
+    .secao-mata-escura {
+      background-color: var(--mata-escura);
+      color: var(--papel);
+    }
+    .secao-mata-escura .texto-apoio {
+      color: var(--papel-2);
+    }
+
+    /* Foco visível de 3 px: --tinta no claro, --sol no escuro */
+    :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+      outline: 3px solid var(--tinta);
+      outline-offset: 3px;
+    }
+    .secao-mata-escura :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible,
+    .fundo-escuro :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+      outline: 3px solid var(--sol);
+      outline-offset: 3px;
+    }
+
+    :where(button, a, input, select, textarea) {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Ícones sempre com traço 2px ao lado do texto */
+    .icone {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+    @keyframes giro-curto {
+      to { transform: rotate(360deg); }
+    }
+    .icone-giro {
+      animation: giro-curto 0.9s linear infinite;
+    }
+
+    /* --- 1. ELEMENTO DE ASSINATURA: TOLDO --- */
+    .toldo {
+      display: block;
+      width: 100%;
+    }
+
+    /* --- 2. ELEMENTO DE ASSINATURA: PLACA DE PREÇO (recorte + furo) --- */
+    .placa-preco {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-8);
+      min-height: 40px;
+      padding: var(--s-8) var(--s-16) var(--s-8) var(--s-12);
+      background-color: var(--acento);
+      color: #FFFFFF;
+      clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+      transition: transform 180ms ease-out, background-color 180ms ease-out;
+    }
+    .placa-preco.trocando {
+      transform: scale(1.05);
+    }
+    .placa-furo {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: var(--papel);
+      box-shadow: inset 0 0 0 1.5px rgba(36, 23, 15, 0.45);
+      flex-shrink: 0;
+    }
+    .placa-preco--destaque {
+      padding: var(--s-8) var(--s-24) var(--s-8) var(--s-16);
+    }
+
+    /* --- 3. ELEMENTO DE ASSINATURA: SELO PREÇOS CONFERIDOS --- */
+    .selo-conferencia {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-8);
+      padding: var(--s-8) var(--s-16);
+      border-radius: var(--r-pilula);
+      background-color: var(--sol);
+      color: var(--tinta);
+      border: 1.5px solid var(--tinta);
+      font-size: 0.9375rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    /* --- 4. BOTÕES, PÍLULAS DE VARIAÇÃO E ESTADOS --- */
+    .botao {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--s-8);
+      min-height: 48px;
+      min-width: 48px;
+      padding: var(--s-12) var(--s-24);
+      border-radius: var(--r-botao);
+      font-family: inherit;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      line-height: 1.2;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out, transform 160ms ease-out;
+    }
+    .botao-mata {
+      background-color: var(--mata);
+      color: #FFFFFF;
+      border-color: var(--mata);
+    }
+    .botao-mata:hover,
+    .botao-mata.is-hover {
+      background-color: var(--mata-escura);
+      border-color: var(--mata-escura);
+    }
+    .botao-contorno {
+      background-color: transparent;
+      color: var(--tinta);
+      border-color: var(--tinta);
+    }
+    .botao-contorno:hover,
+    .botao-contorno.is-hover {
+      background-color: var(--papel-2);
+    }
+    .botao-adicionar {
+      background-color: transparent;
+      color: var(--acento);
+      border-color: var(--acento);
+    }
+    .botao-adicionar:hover,
+    .botao-adicionar.is-hover {
+      background-color: var(--acento);
+      color: #FFFFFF;
+    }
+    .botao-adicionado {
+      background-color: var(--mata);
+      color: #FFFFFF;
+      border-color: var(--mata);
+    }
+    .botao-claro-escuro {
+      background-color: var(--papel);
+      color: var(--mata-escura);
+      border-color: var(--papel);
+    }
+    .botao-claro-escuro:hover {
+      background-color: var(--sol);
+      border-color: var(--sol);
+      color: var(--tinta);
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .botao:active,
+      .botao.is-pressed {
+        transform: translateY(2px);
+      }
+    }
+    .botao[disabled],
+    .botao[aria-disabled="true"] {
+      background-color: var(--papel-2);
+      color: var(--apoio);
+      border: 2px dashed var(--linha);
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Pílulas de variação: seleção nunca depende só de cor (usa ícone de check + borda dupla/cheia) */
+    .grupo-variacoes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s-8);
+    }
+    .pilula-variacao {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-8);
+      min-height: 48px;
+      padding: var(--s-8) var(--s-16);
+      border-radius: var(--r-pilula);
+      border: 1.5px solid var(--linha);
+      background-color: var(--papel);
+      color: var(--tinta);
+      font-family: inherit;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out;
+    }
+    .pilula-variacao:hover {
+      border-color: var(--tinta);
+      background-color: var(--papel-2);
+    }
+    .pilula-variacao[aria-checked="true"],
+    .pilula-variacao[aria-pressed="true"] {
+      background-color: var(--acento);
+      border-color: var(--acento);
+      color: #FFFFFF;
+    }
+    .pilula-variacao .icone {
+      width: 17px;
+      height: 17px;
+    }
+
+    /* --- 5. ELEMENTO DE ASSINATURA: COMANDA (borda serrilhada + linha pontilhada) --- */
+    .comanda-envoltorio {
+      max-width: 480px;
+    }
+    .comanda-serrilha {
+      display: block;
+    }
+    .comanda-corpo {
+      background-color: var(--papel-2);
+      border-inline: 1.2px solid var(--linha);
+      padding: var(--s-24) var(--s-16);
+    }
+    @media (min-width: 640px) {
+      .comanda-corpo { padding: var(--s-24); }
+    }
+    .comanda-cabecalho {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: var(--s-12);
+      padding-bottom: var(--s-12);
+      border-bottom: 1.5px solid var(--linha);
+      margin-bottom: var(--s-16);
+    }
+    .comanda-lista {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-16);
+      margin-bottom: var(--s-24);
+    }
+    .comanda-item-topo {
+      display: flex;
+      align-items: baseline;
+      gap: var(--s-8);
+    }
+    .comanda-item-nome {
+      font-weight: 700;
+      color: var(--tinta);
+    }
+    .comanda-pontilhado {
+      flex: 1 1 24px;
+      border-bottom: 2px dotted var(--linha);
+      transform: translateY(-4px);
+    }
+    .comanda-controles {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s-8);
+      margin-top: var(--s-8);
+    }
+    .passo-qtd {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-8);
+    }
+    .botao-qtd {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--s-4);
+      min-width: 48px;
+      min-height: 48px;
+      padding-inline: var(--s-12);
+      border-radius: var(--r-botao);
+      border: 1.5px solid var(--tinta);
+      background-color: var(--papel);
+      color: var(--tinta);
+      font-family: inherit;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .comanda-total-bloco {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: var(--s-12);
+      padding-top: var(--s-16);
+      border-top: 2px solid var(--tinta);
+      margin-bottom: var(--s-16);
+    }
+    .comanda-vazia {
+      padding: var(--s-24) var(--s-16);
+      border: 1.5px dashed var(--linha);
+      border-radius: var(--r-botao);
+      background-color: var(--papel);
+      color: var(--apoio);
+    }
+
+    /* Mensagens de erro e aviso */
+    .mensagem-erro {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--s-8);
+      padding: var(--s-12) var(--s-16);
+      border-radius: var(--r-botao);
+      border: 1.5px solid var(--erro);
+      background-color: #FDF2F2;
+      color: var(--erro);
+      font-size: 0.9375rem;
+      font-weight: 700;
+    }
+    .campo-entrada {
+      font-family: inherit;
+      font-size: 1.0625rem;
+      line-height: 1.4;
+      color: var(--tinta);
+      background-color: var(--papel);
+      border: 1.5px solid var(--linha);
+      border-radius: var(--r-botao);
+      min-height: 48px;
+      width: 100%;
+      padding: var(--s-12) var(--s-16);
+    }
+    .campo-entrada[aria-invalid="true"] {
+      border-color: var(--erro);
+      border-width: 2px;
+    }
+
+    /* Balão de prévia de encomenda */
+    .balao-conversa {
+      position: relative;
+      background-color: var(--papel);
+      border: 1.5px solid var(--linha);
+      border-radius: var(--r-foto) var(--r-foto) var(--r-foto) 4px;
+      padding: var(--s-16) var(--s-24);
+      color: var(--tinta);
+      white-space: pre-line;
+    }
+
+    @media (forced-colors: active) {
+      .toldo { border-bottom: 3px solid CanvasText; }
+      .placa-preco { clip-path: none; border: 2px solid ButtonText; }
+      .pilula-variacao[aria-checked="true"] { outline: 3px solid Highlight; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    .topo-equipe {
+      background-color: var(--papel-2);
+      border-bottom: 1.5px solid var(--linha);
+      padding-block: var(--s-24);
+    }
+    .grade-equipe {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--s-32);
+      padding-block: var(--s-32) var(--s-96);
+      align-items: start;
+    }
+    @media (min-width: 1024px) {
+      .grade-equipe {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+      }
+      .coluna-ficha { grid-column: 1 / 8; }
+      .coluna-previa {
+        grid-column: 8 / 13;
+        position: sticky;
+        top: var(--s-24);
+      }
+    }
+    .bloco-ficha {
+      background-color: var(--papel-2);
+      border: 1.5px solid var(--linha);
+      border-radius: var(--r-foto);
+      padding: var(--s-24);
+      margin-bottom: var(--s-24);
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-16);
+    }
+    .bloco-ficha legend {
+      font-family: "Fraunces", "Fraunces Fallback", Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-inline: var(--s-8);
+      color: var(--tinta);
+    }
+    .campo-grupo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--s-8);
+    }
+    .campo-grupo label {
+      font-weight: 700;
+    }
+    .duas-colunas {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--s-16);
+    }
+    @media (min-width: 600px) {
+      .duas-colunas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    .linha-consentimento {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--s-12);
+      padding: var(--s-16);
+      background-color: var(--papel);
+      border: 2px solid var(--tinta);
+      border-radius: var(--r-botao);
+    }
+    .linha-consentimento input[type="checkbox"] {
+      width: 24px;
+      height: 24px;
+      margin-top: 2px;
+      accent-color: var(--mata);
+      flex-shrink: 0;
+    }
+    .item-editor {
+      background-color: var(--papel);
+      border: 1.5px solid var(--linha);
+      border-radius: var(--r-botao);
+      padding: var(--s-16);
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-12);
+    }
+    .cartao-previa-ao-vivo {
+      background-color: var(--papel);
+      border: 2px solid var(--tinta);
+      border-radius: var(--r-foto);
+      overflow: hidden;
+    }
+    .previa-miolo {
+      padding: var(--s-24);
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-12);
+    }
+    .aviso-exportacao {
+      margin-top: var(--s-16);
+      padding: var(--s-16);
+      background-color: var(--papel-2);
+      border: 2px solid var(--tinta);
+      border-radius: var(--r-botao);
+      font-weight: 700;
+    }
+    .barra-rascunho {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s-12);
+      padding: var(--s-12) var(--s-16);
+      background-color: var(--papel);
+      border: 1.5px solid var(--linha);
+      border-radius: var(--r-botao);
+      margin-bottom: var(--s-24);
+    }
+  </style>
+</head>
+<body>
+  <div id="toldo-equipe"><svg class="toldo" width="100%" height="51" aria-hidden="true"><defs><pattern id="toldo-alim-34" width="72" height="51" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="36" height="34" fill="var(--acento)"/><rect x="36" y="0" width="36" height="34" fill="var(--papel)"/><line x1="0" y1="0.75" x2="72" y2="0.75" stroke="var(--acento)" stroke-width="1.5"/><line x1="0" y1="34" x2="72" y2="34" stroke="var(--tinta)" stroke-opacity="0.18" stroke-width="1.5"/><path d="M0,34 Q18,58 36,34 Z" fill="var(--acento)"/><path d="M36,34 Q54,58 72,34 Z" fill="var(--papel)" stroke="var(--acento)" stroke-width="1.5"/></pattern></defs><rect width="100%" height="51" fill="url(#toldo-alim-34)"/></svg></div>
+
+  <header class="topo-equipe">
+    <div class="conteiner">
+      <p class="texto-apoio">Uso interno dos grupos extensionistas Unijorge (página fora do menu do cliente · sem senhas)</p>
+      <h1 class="titulo-secao" style="margin-top: var(--s-8);">Ficha de campo do ambulante</h1>
+    </div>
+  </header>
+
+  <main class="conteiner grade-equipe">
+    <form id="form-equipe" class="coluna-ficha" novalidate>
+      <div class="barra-rascunho">
+        <span id="status-rascunho" role="status" class="texto-apoio" style="font-weight: 700;">Rascunho local pronto neste aparelho.</span>
+        <button type="button" class="botao botao-contorno" id="btn-apagar-rascunho">
+          <svg class="icone" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/></svg><span>Apagar rascunho</span>
+        </button>
+      </div>
+
+      <!-- BLOCO 1: CONSENTIMENTO E IDENTIFICAÇÃO -->
+      <fieldset class="bloco-ficha">
+        <legend>1. Consentimento e negócio</legend>
+        <div class="linha-consentimento">
+          <input type="checkbox" id="eq-consentimento" name="consentimento" required>
+          <label for="eq-consentimento">
+            Li em voz alta para o ambulante que a página é gratuita, feita pela extensão da Unijorge, e que ele pode pedir correção ou retirada do ar a qualquer momento. Autorização confirmada. *
+          </label>
+        </div>
+
+        <div class="duas-colunas">
+          <div class="campo-grupo">
+            <label for="eq-segmento">Segmento no Parque da Cidade *</label>
+            <select id="eq-segmento" name="segmento" class="campo-entrada">
+              <option value="alimentacao">Alimentação e bebidas</option>
+              <option value="brinquedos">Brinquedos e doces</option>
+              <option value="inflaveis">Infláveis e pula-pula</option>
+              <option value="bicicletas">Aluguel de bicicletas</option>
+            </select>
+          </div>
+          <div class="campo-grupo">
+            <label for="eq-slug">Identificador curto (slug) *</label>
+            <input type="text" id="eq-slug" name="slug" class="campo-entrada" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="Ex.: barraca-da-nalva" required>
+          </div>
+        </div>
+
+        <div class="duas-colunas">
+          <div class="campo-grupo">
+            <label for="eq-nome">Nome do negócio *</label>
+            <input type="text" id="eq-nome" name="nome_negocio" class="campo-entrada" placeholder="Ex.: Pastel da Sombra" required>
+          </div>
+          <div class="campo-grupo">
+            <label for="eq-atendente">Quem atende</label>
+            <input type="text" id="eq-atendente" name="quem_atende" class="campo-entrada" placeholder="Ex.: Dona Lúcia">
+          </div>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="eq-oferta">O que oferece, no Parque da Cidade *</label>
+          <input type="text" id="eq-oferta" name="o_que_oferece" class="campo-entrada" placeholder="Ex.: Pastel frito na hora e caldo de cana, no Parque da Cidade" required>
+        </div>
+      </fieldset>
+
+      <!-- BLOCO 2: HORÁRIO, PONTO E CONTATO -->
+      <fieldset class="bloco-ficha">
+        <legend>2. Horário, ponto e pagamento</legend>
+        <div class="duas-colunas">
+          <div class="campo-grupo">
+            <label for="eq-dias">Dias de funcionamento *</label>
+            <input type="text" id="eq-dias" name="dias" class="campo-entrada" placeholder="Ex.: Quinta a domingo" required>
+          </div>
+          <div class="duas-colunas">
+            <div class="campo-grupo">
+              <label for="eq-inicio">Início *</label>
+              <input type="text" id="eq-inicio" name="inicio" class="campo-entrada" placeholder="08h" required>
+            </div>
+            <div class="campo-grupo">
+              <label for="eq-fim">Fim *</label>
+              <input type="text" id="eq-fim" name="fim" class="campo-entrada" placeholder="17h" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="eq-ref">Perto de qual referência no parque? *</label>
+          <input type="text" id="eq-ref" name="referencia" class="campo-entrada" placeholder="Ex.: entrada principal, ao lado das amendoeiras" required>
+        </div>
+
+        <div class="duas-colunas">
+          <div class="campo-grupo">
+            <label for="eq-lat">Latitude (opcional)</label>
+            <input type="text" id="eq-lat" name="latitude" class="campo-entrada" inputmode="decimal" placeholder="-12.9949">
+          </div>
+          <div class="campo-grupo">
+            <label for="eq-lng">Longitude (opcional)</label>
+            <input type="text" id="eq-lng" name="longitude" class="campo-entrada" inputmode="decimal" placeholder="-38.4611">
+          </div>
+        </div>
+
+        <div class="duas-colunas">
+          <div class="campo-grupo">
+            <label for="eq-zap">WhatsApp com DDD (DDI 55) *</label>
+            <input type="text" id="eq-zap" name="whatsapp" class="campo-entrada" inputmode="numeric" placeholder="55719..." required>
+          </div>
+          <div class="campo-grupo">
+            <label for="eq-pag">Formas de pagamento (separadas por vírgula)</label>
+            <input type="text" id="eq-pag" name="pagamento" class="campo-entrada" value="Dinheiro, Cartão, Pix">
+          </div>
+        </div>
+
+        <div class="linha-consentimento">
+          <input type="checkbox" id="eq-pix-aut" name="pix_autorizado">
+          <label for="eq-pix-aut">O ambulante autorizou exibir chave Pix e nome do recebedor na página.</label>
+        </div>
+        <div class="duas-colunas" id="bloco-campos-pix" hidden>
+          <div class="campo-grupo">
+            <label for="eq-pix-nome">Nome do recebedor no Pix</label>
+            <input type="text" id="eq-pix-nome" name="pix_recebedor" class="campo-entrada">
+          </div>
+          <div class="campo-grupo">
+            <label for="eq-pix-chave">Chave Pix</label>
+            <input type="text" id="eq-pix-chave" name="pix_chave" class="campo-entrada" autocorrect="off" autocapitalize="none">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- BLOCO 3: ITENS E PREÇOS -->
+      <fieldset class="bloco-ficha">
+        <legend>3. Itens, variações e preços conferidos</legend>
+        <div class="duas-colunas">
+          <div class="campo-grupo">
+            <label for="eq-data-precos">Data da conferência dos preços</label>
+            <input type="date" id="eq-data-precos" name="data_precos" class="campo-entrada">
+          </div>
+          <div class="campo-grupo">
+            <label for="eq-url">URL final prevista</label>
+            <input type="url" id="eq-url" name="url_final" class="campo-entrada" autocorrect="off" autocapitalize="none" placeholder="https://...">
+          </div>
+        </div>
+
+        <div class="duas-colunas">
+          <label class="linha-consentimento" for="eq-pedidos-dia">
+            <input type="checkbox" id="eq-pedidos-dia" checked>
+            <span>Aceita pedidos no dia (comanda)</span>
+          </label>
+          <label class="linha-consentimento" for="eq-encomendas">
+            <input type="checkbox" id="eq-encomendas" checked>
+            <span>Aceita encomendas para grupos</span>
+          </label>
+        </div>
+
+        <div id="lista-itens-equipe" style="display:flex;flex-direction:column;gap:var(--s-12);"></div>
+        <div>
+          <button type="button" class="botao botao-contorno" id="btn-novo-item">
+            <svg class="icone" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg><span>Adicionar item ao catálogo</span>
+          </button>
+        </div>
+      </fieldset>
+
+      <!-- BLOCO 4: HISTÓRIA E FOTOS -->
+      <fieldset class="bloco-ficha">
+        <legend>4. Frase aprovada e enquadramento de foto</legend>
+        <div class="campo-grupo">
+          <label for="eq-historia">Frase curta aprovada por quem atende (opcional)</label>
+          <textarea id="eq-historia" name="historia_aprovada" rows="2" class="campo-entrada" placeholder="Escreva exatamente com as palavras aprovadas pelo ambulante."></textarea>
+        </div>
+        <div class="duas-colunas">
+          <div class="campo-grupo">
+            <label for="eq-foco-barraca">Enquadramento da foto da barraca</label>
+            <select id="eq-foco-barraca" class="campo-entrada">
+              <option value="topo">Topo (protege rostos no alto)</option>
+              <option value="centro">Centro</option>
+              <option value="base">Base</option>
+            </select>
+          </div>
+          <div class="campo-grupo">
+            <label for="eq-foto-teste">Testar foto local (comprime até 150 KB)</label>
+            <input type="file" id="eq-foto-teste" accept="image/*" class="campo-entrada">
+          </div>
+        </div>
+        <p class="texto-apoio" id="status-foto-equipe" role="status"></p>
+      </fieldset>
+
+      <p class="mensagem-erro" id="erro-exportacao-equipe" role="alert" hidden>
+        <svg class="icone" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg><span id="texto-erro-equipe">Confirme o consentimento e os campos obrigatórios antes de exportar.</span>
+      </p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:var(--s-12);">
+        <button type="submit" class="botao botao-mata" id="btn-exportar-dados">
+          <svg class="icone" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6"/><path d="M9 12h6"/></svg><span>Exportar dados.json</span>
+        </button>
+      </div>
+
+      <p class="aviso-exportacao">
+        Exportar não publica o site. O arquivo <code>dados.json</code> salvo no aparelho deve ser entregue à revisão e ao passo de compilação da equipe Unijorge antes de ir ao ar.
+      </p>
+    </form>
+
+    <!-- PRÉVIA AO VIVO -->
+    <aside class="coluna-previa" aria-labelledby="titulo-previa-equipe">
+      <h2 id="titulo-previa-equipe" class="nome-item" style="margin-bottom: var(--s-12);">Prévia ao vivo</h2>
+      <div class="cartao-previa-ao-vivo">
+        <div id="previa-toldo"><svg class="toldo" width="100%" height="47" aria-hidden="true"><defs><pattern id="toldo-alim-30" width="72" height="47" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="36" height="30" fill="var(--acento)"/><rect x="36" y="0" width="36" height="30" fill="var(--papel)"/><line x1="0" y1="0.75" x2="72" y2="0.75" stroke="var(--acento)" stroke-width="1.5"/><line x1="0" y1="30" x2="72" y2="30" stroke="var(--tinta)" stroke-opacity="0.18" stroke-width="1.5"/><path d="M0,30 Q18,54 36,30 Z" fill="var(--acento)"/><path d="M36,30 Q54,54 72,30 Z" fill="var(--papel)" stroke="var(--acento)" stroke-width="1.5"/></pattern></defs><rect width="100%" height="47" fill="url(#toldo-alim-30)"/></svg></div>
+        <div class="previa-miolo">
+          <img id="previa-foto-local" alt="Prévia da foto selecionada" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;" hidden>
+          <h3 class="letreiro-nome" id="previa-nome" style="font-size: 2.35rem;">Nome da barraca</h3>
+          <p id="previa-oferta" class="texto-apoio">O que oferece, no Parque da Cidade</p>
+          <p id="previa-horario" style="font-size: 0.9375rem; font-weight: 700;">Dias e horário</p>
+          <p id="previa-ref" class="texto-apoio" style="font-size: 0.9375rem;">Perto da referência</p>
+          <div style="padding-top:var(--s-12);border-top:1px dashed var(--linha);display:flex;justify-content:space-between;align-items:center;gap:var(--s-8);">
+            <span id="previa-item-nome" style="font-weight:700;">Primeiro item</span>
+            <span class="placa-preco"><span class="placa-furo" aria-hidden="true"></span><span class="preco-valor" id="previa-item-preco">R$ 0,00</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="aviso-exportacao" style="margin-top: var(--s-16);">
+        Exportar não publica o site. Nenhum dado sai deste aparelho até você exportar o arquivo.
+      </div>
+    </aside>
+  </main>
+
+  <script>
+  (() => {
+    const TOLDOS = {"alimentacao": "<svg class=\"toldo\" width=\"100%\" height=\"47\" aria-hidden=\"true\"><defs><pattern id=\"toldo-alim-30\" width=\"72\" height=\"47\" patternUnits=\"userSpaceOnUse\"><rect x=\"0\" y=\"0\" width=\"36\" height=\"30\" fill=\"var(--acento)\"/><rect x=\"36\" y=\"0\" width=\"36\" height=\"30\" fill=\"var(--papel)\"/><line x1=\"0\" y1=\"0.75\" x2=\"72\" y2=\"0.75\" stroke=\"var(--acento)\" stroke-width=\"1.5\"/><line x1=\"0\" y1=\"30\" x2=\"72\" y2=\"30\" stroke=\"var(--tinta)\" stroke-opacity=\"0.18\" stroke-width=\"1.5\"/><path d=\"M0,30 Q18,54 36,30 Z\" fill=\"var(--acento)\"/><path d=\"M36,30 Q54,54 72,30 Z\" fill=\"var(--papel)\" stroke=\"var(--acento)\" stroke-width=\"1.5\"/></pattern></defs><rect width=\"100%\" height=\"47\" fill=\"url(#toldo-alim-30)\"/></svg>", "brinquedos": "<svg class=\"toldo\" width=\"100%\" height=\"43\" aria-hidden=\"true\"><defs><pattern id=\"toldo-brinq-30\" width=\"32\" height=\"43\" patternUnits=\"userSpaceOnUse\"><rect x=\"0\" y=\"0\" width=\"16\" height=\"30\" fill=\"var(--acento)\"/><rect x=\"16\" y=\"0\" width=\"16\" height=\"30\" fill=\"var(--papel)\"/><line x1=\"0\" y1=\"0.75\" x2=\"32\" y2=\"0.75\" stroke=\"var(--acento)\" stroke-width=\"1.5\"/><line x1=\"0\" y1=\"30\" x2=\"32\" y2=\"30\" stroke=\"var(--tinta)\" stroke-opacity=\"0.16\" stroke-width=\"1.2\"/><path d=\"M0,30 Q8,48 16,30 Z\" fill=\"var(--acento)\"/><path d=\"M16,30 Q24,48 32,30 Z\" fill=\"var(--papel)\" stroke=\"var(--acento)\" stroke-width=\"1.3\"/></pattern></defs><rect width=\"100%\" height=\"43\" fill=\"url(#toldo-brinq-30)\"/></svg>", "inflaveis": "<svg class=\"toldo\" width=\"100%\" height=\"54\" aria-hidden=\"true\"><defs><pattern id=\"toldo-infl-30\" width=\"88\" height=\"54\" patternUnits=\"userSpaceOnUse\"><rect x=\"0\" y=\"0\" width=\"58\" height=\"30\" fill=\"var(--acento)\"/><rect x=\"58\" y=\"0\" width=\"30\" height=\"30\" fill=\"var(--papel)\"/><line x1=\"0\" y1=\"0.75\" x2=\"88\" y2=\"0.75\" stroke=\"var(--acento)\" stroke-width=\"1.5\"/><rect x=\"0\" y=\"26\" width=\"88\" height=\"4\" fill=\"var(--acento)\"/><path d=\"M0,30 Q44,68 88,30 Z\" fill=\"var(--acento)\"/></pattern></defs><rect width=\"100%\" height=\"54\" fill=\"url(#toldo-infl-30)\"/></svg>", "bicicletas": "<svg class=\"toldo\" width=\"100%\" height=\"45\" aria-hidden=\"true\"><defs><pattern id=\"toldo-bike-diag-30\" width=\"28\" height=\"28\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(-45)\"><rect x=\"0\" y=\"0\" width=\"15\" height=\"28\" fill=\"var(--acento)\"/><rect x=\"15\" y=\"0\" width=\"13\" height=\"28\" fill=\"var(--papel)\"/></pattern><pattern id=\"toldo-bike-onda-30\" width=\"40\" height=\"15\" y=\"30\" patternUnits=\"userSpaceOnUse\"><path d=\"M0,0 Q20,22 40,0 Z\" fill=\"var(--acento)\"/></pattern></defs><rect x=\"0\" y=\"0\" width=\"100%\" height=\"30\" fill=\"url(#toldo-bike-diag-30)\"/><line x1=\"0\" y1=\"0.75\" x2=\"100%\" y2=\"0.75\" stroke=\"var(--acento)\" stroke-width=\"1.5\"/><rect x=\"0\" y=\"27\" width=\"100%\" height=\"3\" fill=\"var(--acento)\"/><rect x=\"0\" y=\"30\" width=\"100%\" height=\"15\" fill=\"url(#toldo-bike-onda-30)\"/></svg>"};
+    const CHAVE_RASCUNHO = "toldo_aberto_rascunho_equipe_v1";
+    const form = document.getElementById("form-equipe");
+    const listaItens = document.getElementById("lista-itens-equipe");
+    const statusRascunho = document.getElementById("status-rascunho");
+    const pixAut = document.getElementById("eq-pix-aut");
+    const blocoPix = document.getElementById("bloco-campos-pix");
+
+    let itensEstado = [
+      { nome: "Pastel grande na hora", categoria: "Salgados", preco: "10.00", variacoes: "Queijo:10, Carne:10" }
+    ];
+
+    function criarLinhaItemDOM(item, idx) {
+      const wrap = document.createElement("div");
+      wrap.className = "item-editor";
+      wrap.innerHTML =
+        '<div class="duas-colunas">' +
+          '<div class="campo-grupo"><label>Nome do item ' + (idx + 1) + '</label><input type="text" class="campo-entrada js-it-nome"></div>' +
+          '<div class="campo-grupo"><label>Categoria</label><input type="text" class="campo-entrada js-it-cat"></div>' +
+        '</div>' +
+        '<div class="duas-colunas">' +
+          '<div class="campo-grupo"><label>Preço base (R$)</label><input type="text" inputmode="decimal" class="campo-entrada js-it-preco"></div>' +
+          '<div class="campo-grupo"><label>Variações (Ex.: 300 ml:14, 500 ml:20)</label><input type="text" class="campo-entrada js-it-var"></div>' +
+        '</div>' +
+        '<div><button type="button" class="botao botao-contorno js-rem-it">Remover item</button></div>';
+      wrap.querySelector(".js-it-nome").value = item.nome || "";
+      wrap.querySelector(".js-it-cat").value = item.categoria || "";
+      wrap.querySelector(".js-it-preco").value = item.preco || "";
+      wrap.querySelector(".js-it-var").value = item.variacoes || "";
+      wrap.querySelectorAll("input").forEach((inp) => inp.addEventListener("input", () => {
+        sincronizarItensDoDOM();
+        atualizarPreviaESalvar();
+      }));
+      wrap.querySelector(".js-rem-it").addEventListener("click", () => {
+        if (itensEstado.length > 1) {
+          itensEstado.splice(idx, 1);
+          renderizarItensEditor();
+          atualizarPreviaESalvar();
+        }
+      });
+      return wrap;
+    }
+
+    function renderizarItensEditor() {
+      listaItens.innerHTML = "";
+      itensEstado.forEach((it, i) => listaItens.appendChild(criarLinhaItemDOM(it, i)));
+    }
+
+    function sincronizarItensDoDOM() {
+      itensEstado = Array.from(listaItens.querySelectorAll(".item-editor")).map((ed) => ({
+        nome: ed.querySelector(".js-it-nome").value,
+        categoria: ed.querySelector(".js-it-cat").value,
+        preco: ed.querySelector(".js-it-preco").value,
+        variacoes: ed.querySelector(".js-it-var").value
+      }));
+    }
+
+    function montarDadosJSON() {
+      const seg = document.getElementById("eq-segmento").value;
+      const dPrecos = document.getElementById("eq-data-precos").value;
+      const dataBR = dPrecos && /^\d{4}-\d{2}-\d{2}$/.test(dPrecos)
+        ? dPrecos.split("-").reverse().join("/")
+        : "";
+      const itensFormatados = itensEstado.filter((x) => x.nome.trim()).map((x, idx) => {
+        const vars = (x.variacoes || "").split(",").map((s) => s.trim()).filter(Boolean).map((par) => {
+          const [r, p] = par.split(":");
+          return { rotulo: (r || "").trim(), preco: Number(String(p || x.preco || 0).replace(",", ".")) || 0 };
+        }).filter((v) => v.rotulo);
+        return {
+          id: "item-" + (idx + 1),
+          categoria: x.categoria.trim() || "Geral",
+          nome: x.nome.trim(),
+          preco: Number(String(x.preco || 0).replace(",", ".")) || 0,
+          tipo_variacao: "opção",
+          variacoes: vars
+        };
+      });
+
+      const inicio = document.getElementById("eq-inicio").value.trim();
+      const fim = document.getElementById("eq-fim").value.trim();
+      const dias = document.getElementById("eq-dias").value.trim();
+
+      return {
+        slug: document.getElementById("eq-slug").value.trim() || "barraca-parque",
+        modo_exemplo: false,
+        consentimento: document.getElementById("eq-consentimento").checked,
+        segmento: seg,
+        nome_negocio: document.getElementById("eq-nome").value.trim(),
+        quem_atende: document.getElementById("eq-atendente").value.trim(),
+        o_que_oferece: document.getElementById("eq-oferta").value.trim(),
+        whatsapp: document.getElementById("eq-zap").value.replace(/\D/g, ""),
+        pix: {
+          autorizado: pixAut.checked,
+          recebedor: document.getElementById("eq-pix-nome").value.trim(),
+          chave: document.getElementById("eq-pix-chave").value.trim()
+        },
+        pagamento: document.getElementById("eq-pag").value.split(",").map((s) => s.trim()).filter(Boolean),
+        dias: dias,
+        horarios: {
+          inicio: inicio,
+          fim: fim,
+          tabela: dias && inicio && fim ? [{ dias: dias, horario: inicio + " às " + fim }] : []
+        },
+        referencia: document.getElementById("eq-ref").value.trim(),
+        latitude: document.getElementById("eq-lat").value.trim() || null,
+        longitude: document.getElementById("eq-lng").value.trim() || null,
+        data_precos_conferidos: dataBR,
+        destaque: "",
+        aceita_pedidos_do_dia: document.getElementById("eq-pedidos-dia").checked,
+        aceita_encomendas: document.getElementById("eq-encomendas").checked,
+        historia_aprovada: document.getElementById("eq-historia").value.trim(),
+        fotos: {},
+        enquadramentos: { barraca: document.getElementById("eq-foco-barraca").value },
+        url_final: document.getElementById("eq-url").value.trim(),
+        itens: itensFormatados
+      };
+    }
+
+    function atualizarPreviaESalvar() {
+      const dados = montarDadosJSON();
+      document.documentElement.setAttribute("data-segmento", dados.segmento);
+      document.getElementById("toldo-equipe").innerHTML = TOLDOS[dados.segmento] || TOLDOS.alimentacao;
+      document.getElementById("previa-toldo").innerHTML = TOLDOS[dados.segmento] || TOLDOS.alimentacao;
+      blocoPix.hidden = !pixAut.checked;
+
+      document.getElementById("previa-nome").textContent = dados.nome_negocio || "Nome da barraca";
+      document.getElementById("previa-oferta").textContent = dados.o_que_oferece || "O que oferece, no Parque da Cidade";
+      document.getElementById("previa-horario").textContent = dados.dias
+        ? dados.dias + (dados.horarios.inicio && dados.horarios.fim ? ", das " + dados.horarios.inicio + " às " + dados.horarios.fim : "")
+        : "Dias e horário";
+      document.getElementById("previa-ref").textContent = dados.referencia ? "Perto da " + dados.referencia : "Perto da referência";
+
+      const pItem = dados.itens[0];
+      document.getElementById("previa-item-nome").textContent = pItem ? pItem.nome : "Primeiro item";
+      const pVal = pItem ? (pItem.variacoes.length ? pItem.variacoes[0].preco : pItem.preco) : 0;
+      document.getElementById("previa-item-preco").textContent = "R$ " + Number(pVal || 0).toFixed(2).replace(".", ",");
+
+      try {
+        window.localStorage.setItem(CHAVE_RASCUNHO, JSON.stringify({ dados: dados, itensEstado: itensEstado }));
+        statusRascunho.textContent = "Rascunho salvo automaticamente neste aparelho.";
+      } catch (_e) {
+        statusRascunho.textContent = "Armazenamento local indisponível; exporte antes de fechar.";
+      }
+    }
+
+    /* Carregar rascunho se existir */
+    try {
+      const salvo = JSON.parse(window.localStorage.getItem(CHAVE_RASCUNHO) || "null");
+      if (salvo && salvo.dados) {
+        const d = salvo.dados;
+        document.getElementById("eq-consentimento").checked = Boolean(d.consentimento);
+        document.getElementById("eq-segmento").value = d.segmento || "alimentacao";
+        document.getElementById("eq-slug").value = d.slug || "";
+        document.getElementById("eq-nome").value = d.nome_negocio || "";
+        document.getElementById("eq-atendente").value = d.quem_atende || "";
+        document.getElementById("eq-oferta").value = d.o_que_oferece || "";
+        document.getElementById("eq-dias").value = d.dias || "";
+        document.getElementById("eq-inicio").value = (d.horarios && d.horarios.inicio) || "";
+        document.getElementById("eq-fim").value = (d.horarios && d.horarios.fim) || "";
+        document.getElementById("eq-ref").value = d.referencia || "";
+        document.getElementById("eq-zap").value = d.whatsapp || "";
+        pixAut.checked = Boolean(d.pix && d.pix.autorizado);
+        if (Array.isArray(salvo.itensEstado) && salvo.itensEstado.length) itensEstado = salvo.itensEstado;
+      }
+    } catch (_e) {}
+
+    renderizarItensEditor();
+    atualizarPreviaESalvar();
+
+    form.querySelectorAll("input, select, textarea").forEach((el) => {
+      if (el.id !== "eq-foto-teste") {
+        el.addEventListener("input", atualizarPreviaESalvar);
+        el.addEventListener("change", atualizarPreviaESalvar);
+      }
+    });
+
+    document.getElementById("btn-novo-item").addEventListener("click", () => {
+      itensEstado.push({ nome: "", categoria: "", preco: "", variacoes: "" });
+      renderizarItensEditor();
+    });
+
+    document.getElementById("btn-apagar-rascunho").addEventListener("click", () => {
+      try { window.localStorage.removeItem(CHAVE_RASCUNHO); } catch (_e) {}
+      form.reset();
+      itensEstado = [{ nome: "", categoria: "", preco: "", variacoes: "" }];
+      renderizarItensEditor();
+      atualizarPreviaESalvar();
+      statusRascunho.textContent = "Rascunho apagado deste aparelho.";
+    });
+
+    /* Teste local de compressão de foto até 150 KB */
+    document.getElementById("eq-foto-teste").addEventListener("change", (ev) => {
+      const arq = ev.target.files && ev.target.files[0];
+      if (!arq) return;
+      const leitor = new FileReader();
+      leitor.onload = () => {
+        const img = new Image();
+        img.onload = () => {
+          const escala = Math.min(1, 1080 / Math.max(img.width, img.height));
+          const cv = document.createElement("canvas");
+          cv.width = Math.round(img.width * escala);
+          cv.height = Math.round(img.height * escala);
+          const ctx = cv.getContext("2d");
+          ctx.filter = "brightness(1.02) contrast(1.02)";
+          ctx.drawImage(img, 0, 0, cv.width, cv.height);
+          const dataUrl = cv.toDataURL("image/webp", 0.78);
+          const kb = Math.round(((dataUrl.split(",")[1] || "").length * 3 / 4) / 1024);
+          const prevImg = document.getElementById("previa-foto-local");
+          prevImg.src = dataUrl;
+          prevImg.hidden = false;
+          document.getElementById("status-foto-equipe").textContent = "Foto comprimida localmente para " + kb + " KB (limite 150 KB).";
+        };
+        img.src = leitor.result;
+      };
+      leitor.readAsDataURL(arq);
+    });
+
+    form.addEventListener("submit", (ev) => {
+      ev.preventDefault();
+      sincronizarItensDoDOM();
+      const dados = montarDadosJSON();
+      const erroBox = document.getElementById("erro-exportacao-equipe");
+      const erroTxt = document.getElementById("texto-erro-equipe");
+
+      if (!dados.consentimento) {
+        erroTxt.textContent = "Confirme o consentimento do ambulante antes de exportar.";
+        erroBox.hidden = false;
+        document.getElementById("eq-consentimento").focus();
+        return;
+      }
+      if (!dados.nome_negocio || !/^55\d{10,11}$/.test(dados.whatsapp)) {
+        erroTxt.textContent = "Preencha o nome do negócio e um WhatsApp válido com DDI 55 + DDD (12 ou 13 dígitos).";
+        erroBox.hidden = false;
+        return;
+      }
+      erroBox.hidden = true;
+      const blob = new Blob([JSON.stringify(dados, null, 2)], { type: "application/json" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "dados.json";
+      link.click();
+      URL.revokeObjectURL(link.href);
+    });
+  })();
+  </script>
+</body>
+</html>
